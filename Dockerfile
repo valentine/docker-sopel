@@ -1,7 +1,7 @@
 # Copyright 2016 Valentine C
 #
 
-FROM gliderlabs/alpine
+FROM justcontainers/base-alpine
 
 MAINTAINER Valentine C
 
