@@ -1,12 +1,14 @@
 # Copyright 2016 Valentine C
+#
 
 FROM justcontainers/base-alpine
 
 MAINTAINER Valentine C
 
-RUN apk add --update \
+RUN apk --no-cache add \
     py-pip \
     ca-certificates \
+    enchant \
     && pip install \
     sopel \
     ipython \
