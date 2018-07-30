@@ -1,13 +1,14 @@
-# Copyright 2016 Valentine C
+# Copyright 2018 Valentine C
 
-FROM justcontainers/base-alpine
+FROM woahbase/alpine-s6
 
 MAINTAINER Valentine C
 
 RUN apk add --update \
-    py-pip \
+    python3 \
     ca-certificates \
-    && pip install \
+    enchant \
+    && pip3 install \
     sopel \
     ipython \
     && rm -rf /tmp/* /var/cache/apk/*
